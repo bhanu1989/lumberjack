@@ -15,6 +15,6 @@
  */
 
 module.exports = {
-  preset: 'amex-jest-preset',
-  collectCoverageFrom: ['src/**'],
+  preset: "amex-jest-preset",
+  collectCoverageFrom: ["src/**"],
 };

@@ -1,9 +1,14 @@
 {
-  "extends": ["amex"],
+  "rules": {
+    "quotes": ["error", "double"]
+  },
   "overrides": [
     {
       "files": ["**/__tests__/**", "**/__mocks__/**", "*.spec.js"],
-      "extends": ["amex/test"]
+      "extends": ["amex/test"],
+      "rules": {
+        "quotes": ["error", "double"]
+      }
     }
   ]
 }

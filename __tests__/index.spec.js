@@ -12,20 +12,20 @@
  * under the License.
  */
 
-import Lumberjack, { monkeypatches } from '../src';
+import Lumberjack, { monkeypatches } from "../src";
 
-import mockedLumberjack from '../src/Lumberjack';
-import mockedMonkeypatchs from '../src/monkeypatches';
+import mockedLumberjack from "../src/Lumberjack";
+import mockedMonkeypatchs from "../src/monkeypatches";
 
-jest.mock('../src/Lumberjack');
-jest.mock('../src/monkeypatches');
+jest.mock("../src/Lumberjack");
+jest.mock("../src/monkeypatches");
 
-describe('main', () => {
-  it('has default export Lumberjack', () => {
+describe("main", () => {
+  it("has default export Lumberjack", () => {
     expect(Lumberjack).toBe(mockedLumberjack);
   });
 
-  it('has named export monkeypatches', () => {
+  it("has named export monkeypatches", () => {
     expect(monkeypatches).toBe(mockedMonkeypatchs);
   });
 });

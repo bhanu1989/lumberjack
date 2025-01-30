@@ -11,7 +11,6 @@
  * or implied. See the License for the specific language governing permissions and limitations
  * under the License.
  */
-
 const { Console } = require('console');
 const { format } = require('util');
 
@@ -32,7 +31,7 @@ function loggerFunctionBuilder({
     // The performance of .apply and the spread operator seems on par in V8
     // 6.3 but the spread operator, unlike .apply(), pushes the elements
     // onto the stack. That is, it makes stack overflows more likely.
-    // https://github.com/nodejs/node/blob/master/lib/console.js#L137-L139
+    // https://github.com/nodejs/node/blob/main/lib/console.js#L137-L139
     // TODO: use apply instead of spread to decrease chances of stack overflows?
     return (...args) => {
       const line = formatter(level, ...args);

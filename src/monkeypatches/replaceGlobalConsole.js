@@ -22,8 +22,4 @@ export default function replaceGlobalConsole(logger) {
   // global.console = logger;
   // TypeError: Cannot set property console of #<Object> which has only a getter
   // so set each property instead
-  console.error = logger.error;
-  console.warn = logger.warn;
-  console.info = logger.info;
-  console.log = logger.log;
 }

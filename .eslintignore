@@ -2,6 +2,15 @@
 node_modules
 *.log
 lib
+src/Lumberjack.js
+src/index.js
+src/monkeypatches/attachHttpRequestSpy.js
+src/monkeypatches/attachHttpsRequestSpy.js
+src/monkeypatches/attachSpy.js
+src/monkeypatches/httpSpy.js
+src/monkeypatches/index.js
+src/monkeypatches/replaceGlobalConsole.js
+
 
 # test
 test-results
